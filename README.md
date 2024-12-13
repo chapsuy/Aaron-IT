@@ -8,10 +8,10 @@ Features
     About Me Section
         A professional introduction highlighting my aspirations as a software engineer.
     Skills Section
-        A structured layout (3 columns, 2 rows) showcasing my technical expertise.
+        A structured layout (3 columns, 2 rows) showcasing my expertise 
     Projects Section
         A showcase of two of my projects, each with a clean design and clickable links for more details.
-    Sustainable Development Goals (SDGs) Slider
+    Sustainable Development Goals (SDGs) 
         A visually appealing slider featuring the 17 SDGs with relevant images and descriptions.
 
 Technologies Used
@@ -34,7 +34,7 @@ Sections
     Projects
         Displays two projects with images and short descriptions, along with clickable links for more details.
 
-    Sustainable Development Goals Slider
+    Sustainable Development Goals 
         A slider featuring the 17 SDGs with smooth transitions and professional styling.
 
 How to Use

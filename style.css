@@ -1,0 +1,411 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.marquee{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  top: 45rem;
+}
+.marquee h1{
+  font-size: 10rem;
+  font-family: Times New Roman;
+  animation: animate 10s linear infinite;
+  padding-left: 120%;
+  display: inline-block;
+  color white;
+  text-shadow: 20px 0px 7px grey;
+  
+}
+
+@keyframes animate{
+ 100%{
+  transform:translate(-100%, 0);
+ }
+}
+
+
+
+
+.nav-container{
+  position: sticky;
+  top: 10px;
+  
+  
+}
+
+#navnav{
+  display: flex;
+  gap: 2rem;
+  font-size: 4ch;
+  border: 2px solid black;
+  font-family: Times New Roman;
+  border-radius: 40px;
+  padding: 10px 20px;
+  position:fixed;
+ top: 2%;
+  z-index: 9999;
+  background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  left: 20%;
+  border: 1px solid;
+  
+  
+}
+
+
+.img-aaron{
+  width: 50.5rem;
+}
+
+
+
+
+
+.home-container{
+ min-height: 100vh;
+ width: 100%;
+ z-index: 1;
+ 
+ 
+}
+
+
+
+.img-ko{
+  position: absolute;
+  top:8%;
+  left: 24%;
+  z-index: -1;
+  
+}
+
+
+.autoshow{
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation{
+  from{
+    opacity: 0;
+    transform: translateY(200px) scale(0.3)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* abt me*/
+
+#abt-container{
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem;
+  padding-top: 7rem;
+  z-index: -1;
+  position: relative;
+  
+ 
+  
+}
+
+.abt-content{
+  display: flex;
+  justify-content:space-between ;
+  gap: 10rem;
+  z-index: 2;
+  
+  
+  
+}
+
+.abtme-text{
+  font-size: 4ch;
+  text-align: center;
+  position: relative;
+  top:4rem;
+  z-index: 6;
+}
+.img-aaron2{
+  width: 30rem;
+  border-radius:50px;
+  z-index: 6;
+}
+
+#abtmeme{
+  position: relative;
+  left: 10ch;
+  font-family: Times New Roman;
+  text-transform: uppercase;
+}
+.img-size{
+  width:10%;
+}
+.abtmememe{
+  position: relative;
+  top: 4rem;
+  font-size: 2ch;
+  text-align: justify;
+  
+  
+}
+.abtme4{
+  text-align: justify;
+}
+
+.img-abt{
+  position: relative;
+  top: 150px;
+  
+}
+
+.icons{
+  position: relative;
+  top: 9rem;
+  font-family: Times New Roman;
+  font-size: 30px;
+}
+  
+
+/*   Skills   */
+/* Skills */
+.skills {
+  padding: 10%;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  z-index: -1;
+  position: relative;
+}
+
+.skills-title {
+  font-family: Times New Roman;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skill {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  font-size: 1rem;
+}
+
+/* Projects */
+/* General Project Section */
+.projects {
+  padding: 5rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  min-height:100vh;
+  z-index: -1;
+  position: relative;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  top: 5rem;
+}
+
+/*  Projects */
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+  
+  
+}
+
+/*  Project Box */
+.project {
+  width: 45%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 4rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.project-title{
+  font-family: Times New Roman;
+}
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Project Info */
+.project-info {
+  padding: 1.5rem;
+  text-align: left;
+  z-index: 1;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+  z-index: 1;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #007BFF;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.project-link:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+
+
+
+/* SDG Section */
+#sdg {
+  background-color: #f4f4f9;
+  padding: 50px 0;
+  min-height: 100vh;
+  z-index: -1;
+  position: relative;
+}
+.sdg-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 5rem;
+  font-family: Times New Roman;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 7rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sdg-item {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sdg-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.sdg-item h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #333;
+}
+
+.sdg-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.sdg-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.sdg-btn:hover {
+  background-color: #0056b3;
+}
+
+.sdg-item:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .sdg-item {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sdg-item {
+    width: 150px;
+  }
+}
